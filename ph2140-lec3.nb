@@ -1,0 +1,320 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9337,        311]
+NotebookOptionsPosition[      8130,        272]
+NotebookOutlinePosition[      8471,        287]
+CellTagsIndexPosition[      8428,        284]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[StyleBox["Solving Algebraic Equations",
+ FontSize->18,
+ FontWeight->"Bold",
+ FontColor->RGBColor[0, 0, 1]]], "Text",
+ CellChangeTimes->{{3.648721656470121*^9, 3.648721674794875*^9}}],
+
+Cell["Look in the Documentation Center under \[OpenCurlyDoubleQuote]Equation \
+Solving\[CloseCurlyDoubleQuote]. ", "Text",
+ CellChangeTimes->{{3.6487218302464633`*^9, 3.6487218473648195`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Remove", "[", "\"\<Global`*\>\"", "]"}]], "Input"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{"Note", " ", "the", " ", 
+    RowBox[{"syntax", ":", " ", 
+     RowBox[{"Use", " ", "of", " ", "\"\<==\>\""}]}]}], " ", ",", " ", 
+   RowBox[{
+   "Solution", " ", "comes", " ", "out", " ", "as", " ", "a", " ", 
+    "replacement", " ", 
+    RowBox[{"statement", "."}]}]}], "Text",
+  FontColor->GrayLevel[0]]], "Input",
+ CellChangeTimes->{{3.6487211539260526`*^9, 3.648721197286363*^9}, {
+  3.648721259707029*^9, 3.6487212601914644`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"lin", "=", 
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"x", "+", "a"}], "\[Equal]", "b"}], ",", "x"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.648720971946762*^9, 3.648720980753251*^9}, {
+  3.6487211767840414`*^9, 3.6487211790946503`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Expand", "[", 
+  RowBox[{
+   RowBox[{"x", "^", "2"}], "/.", "lin"}], "]"}]], "Input",
+ CellChangeTimes->{{3.648721473311022*^9, 3.6487214757948823`*^9}}],
+
+Cell[TextData[StyleBox["Assigning the value of the solution to the variable",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.6487214421107426`*^9, 3.648721465451582*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"x", "^", "2"}], "/.", "lin"}], "/.", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"a", "\[Rule]", "3"}], ",", 
+    RowBox[{"b", "\[Rule]", "5"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.6487214852765627`*^9, 3.648721488187189*^9}}],
+
+Cell[BoxData[
+ RowBox[{"quad", "=", 
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"a", " ", 
+       RowBox[{"x", "^", "2"}]}], "+", 
+      RowBox[{"b", " ", "x"}], "+", "c"}], "==", "0"}], ",", "x"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.6487210900551453`*^9, 3.648721092227044*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"q1", "=", 
+  RowBox[{"solution", "[", 
+   RowBox[{"[", "1", "]"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"q2", "=", 
+  RowBox[{"solution", "[", 
+   RowBox[{"[", "2", "]"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.648721099390947*^9, 3.648721104793208*^9}}],
+
+Cell[TextData[StyleBox["Systems of equations: Use of \[OpenCurlyQuote]&&\
+\[CloseCurlyQuote]",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.648721283676388*^9, 3.648721288545124*^9}, {
+  3.64872132790107*^9, 3.648721357578557*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"a", "*", "x"}], "+", 
+      RowBox[{"b", "*", "y"}]}], "\[Equal]", "c"}], " ", "&&", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"d", "*", "x"}], "+", 
+      RowBox[{"e", "*", "y"}]}], "\[Equal]", "f"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y"}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "^", "2"}], "+", 
+      RowBox[{"y", "^", "2"}]}], "\[Equal]", 
+     RowBox[{"R", "^", "2"}]}], " ", "&&", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"a", " ", "x"}], "+", 
+      RowBox[{"b", " ", "y"}]}], "\[Equal]", "0"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y"}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"%", "/.", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"R", "\[Rule]", "1"}], ",", 
+    RowBox[{"a", "\[Rule]", "1"}], ",", 
+    RowBox[{"b", "\[Rule]", "1"}]}], "}"}]}]], "Input"],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{Inherited, 3}],
+
+Cell[TextData[StyleBox["Numerical Evaluation",
+ FontSize->18,
+ FontWeight->"Bold",
+ FontColor->RGBColor[0, 0, 1]]], "Text",
+ CellChangeTimes->{{3.6487217132951956`*^9, 3.6487217132951956`*^9}, {
+  3.64872175159239*^9, 3.648721789549157*^9}}],
+
+Cell["\<\
+Look in the Documentation Center under \[OpenCurlyDoubleQuote]Numbers and \
+Precision\[CloseCurlyDoubleQuote]\
+\>", "Text",
+ CellChangeTimes->{{3.6487218021898866`*^9, 3.648721804564905*^9}, {
+  3.6487218728059993`*^9, 3.648721882232458*^9}, {3.6487221008097425`*^9, 
+  3.6487221080661817`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"N", "[", "Pi", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"N", "[", 
+  RowBox[{"Pi", ",", "25"}], "]"}]}], "Input"],
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"E", ",", "10"}], "]"}]], "Input"],
+
+Cell[TextData[StyleBox["Numerical solutions to albegraic equations",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.6487222595410185`*^9, 3.648722277336331*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"eq1", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"x", "/", "a"}], ")"}], "^", "2"}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"y", "/", "b"}], ")"}], "^", "2"}]}], "\[Equal]", "1"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"eq2", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"c", " ", "x"}], "+", 
+     RowBox[{"d", " ", "y"}]}], "\[Equal]", "1"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"abcd", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"a", "\[Rule]", "1"}], ",", 
+     RowBox[{"b", "\[Rule]", "2"}], ",", 
+     RowBox[{"c", "\[Rule]", "3"}], ",", 
+     RowBox[{"d", "\[Rule]", "4"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"soln", "=", 
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"eq1", ",", "eq2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{
+  3.6487223430824113`*^9, {3.648722374356223*^9, 3.648722376293706*^9}}],
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"soln", "/.", "abcd"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6487223862145514`*^9, 3.6487223887085075`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"NSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"eq1", ",", "eq2"}], "}"}], "/.", "abcd"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y"}], "}"}]}], "]"}]], "Input"],
+
+Cell[TextData[StyleBox["Approximate solutions to polynomial equations",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.648722626689193*^9, 3.648722638438108*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"NSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"x", "^", "5"}], "-", 
+     RowBox[{"2", "x"}], "+", "3"}], "\[Equal]", "0"}], ",", "x"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"NSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"x", "^", "5"}], "-", 
+     RowBox[{"2", "x"}], "+", "3"}], "\[Equal]", "0"}], ",", "x", ",", 
+   "Reals"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6487225953395348`*^9, 3.648722612923458*^9}, 
+   3.6487226521931024`*^9}],
+
+Cell[BoxData[
+ RowBox[{"NSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Sin", "[", "x", "]"}], "\[Equal]", 
+     RowBox[{"1", "/", "3"}]}], "}"}], ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"FindRoot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Sin", "[", "x", "]"}], "-", 
+    FractionBox["1", "3"]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0.3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6487228701479015`*^9, 3.6487229038824863`*^9}}]
+},
+WindowSize->{1904, 997},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 29, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 196, 4, 35, "Text"],
+Cell[757, 26, 192, 2, 30, "Text"],
+Cell[952, 30, 74, 1, 31, "Input"],
+Cell[1029, 33, 483, 12, 31, "Input"],
+Cell[1515, 47, 284, 7, 31, "Input"],
+Cell[1802, 56, 177, 4, 31, "Input"],
+Cell[1982, 62, 176, 2, 30, "Text"],
+Cell[2161, 66, 277, 8, 31, "Input"],
+Cell[2441, 76, 324, 10, 31, "Input"],
+Cell[2768, 88, 287, 7, 52, "Input"],
+Cell[3058, 97, 239, 4, 30, "Text"],
+Cell[3300, 103, 389, 13, 31, "Input"],
+Cell[3692, 118, 415, 14, 31, "Input"],
+Cell[4110, 134, 200, 6, 31, "Input"],
+Cell[4313, 142, 273, 9, 5, "Text"],
+Cell[4589, 153, 241, 5, 35, "Text"],
+Cell[4833, 160, 305, 6, 30, "Text"],
+Cell[5141, 168, 137, 3, 52, "Input"],
+Cell[5281, 173, 78, 2, 31, "Input"],
+Cell[5362, 177, 167, 2, 30, "Text"],
+Cell[5532, 181, 1049, 35, 92, "Input"],
+Cell[6584, 218, 154, 3, 31, "Input"],
+Cell[6741, 223, 214, 7, 31, "Input"],
+Cell[6958, 232, 168, 2, 30, "Text"],
+Cell[7129, 236, 510, 16, 52, "Input"],
+Cell[7642, 254, 197, 6, 31, "Input"],
+Cell[7842, 262, 284, 8, 46, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
