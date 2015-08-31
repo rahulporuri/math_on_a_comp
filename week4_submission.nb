@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[    399645,       7509]
-NotebookOptionsPosition[    397808,       7446]
-NotebookOutlinePosition[    398144,       7461]
-CellTagsIndexPosition[    398101,       7458]
+NotebookDataLength[    398540,       7492]
+NotebookOptionsPosition[    396717,       7428]
+NotebookOutlinePosition[    397053,       7443]
+CellTagsIndexPosition[    397010,       7440]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -7277,59 +7277,35 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{
-  StyleBox[
-   RowBox[{"NIntegrate", "::", "inumr"}], "MessageName"], 
+  SubsuperscriptBox["\[Integral]", 
+   RowBox[{"-", 
+    FractionBox["1", "2"]}], 
+   FractionBox["1", "2"]], 
   RowBox[{
-  ":", " "}], "\<\"The integrand \
-\[NoBreak]\\!\\(\[ExponentialE]\\^\\(\\(\\(-4\\)\\)\\\\ \
-z0\\^2\\)\\/\\@\\(x\\^2 + y\\^2 + \\((z - z0)\\)\\^2\\)\\)\[NoBreak] has \
-evaluated to non-numerical values for all sampling points in the region with \
-boundaries \[NoBreak]\\!\\({\\({\\(\\(-\\(\\(1\\/2\\)\\)\\)\\), 1\\/2}\\)}\\)\
-\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
-ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
-ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", ButtonNote -> \
-\\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.649947817876226*^9}],
-
-Cell[BoxData[
- RowBox[{
-  StyleBox[
-   RowBox[{"NIntegrate", "::", "inumr"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"The integrand \
-\[NoBreak]\\!\\(\[ExponentialE]\\^\\(\\(\\(-4\\)\\)\\\\ \
-z0\\^2\\)\\/\\@\\(x\\^2 + y\\^2 + \\((z - z0)\\)\\^2\\)\\)\[NoBreak] has \
-evaluated to non-numerical values for all sampling points in the region with \
-boundaries \[NoBreak]\\!\\({\\({\\(\\(-\\(\\(1\\/2\\)\\)\\)\\), 1\\/2}\\)}\\)\
-\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
-ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
-ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", ButtonNote -> \
-\\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.649947818077753*^9}],
-
-Cell[BoxData[
- RowBox[{"NIntegrate", "[", 
-  RowBox[{
-   RowBox[{
-    RowBox[{"dV", "[", 
-     RowBox[{"x", ",", "y", ",", "z", ",", "z0", ",", "a"}], "]"}], "/.", 
-    "\[VeryThinSpace]", 
-    RowBox[{"{", 
-     RowBox[{"a", "\[Rule]", 
-      FractionBox["1", "2"]}], "}"}]}], ",", 
-   RowBox[{"{", 
-    RowBox[{"z0", ",", 
-     RowBox[{"-", 
-      FractionBox["1", "2"]}], ",", 
-     FractionBox["1", "2"]}], "}"}]}], "]"}]], "Output",
- CellChangeTimes->{3.649401715442725*^9, 3.649947818084209*^9}]
+   FractionBox[
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "4"}], " ", 
+      SuperscriptBox["z0", "2"]}]], 
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], "+", 
+      SuperscriptBox["y", "2"], "+", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"z", "-", "z0"}], ")"}], "2"]}]]], 
+   RowBox[{"\[DifferentialD]", "z0"}]}]}]], "Output",
+ CellChangeTimes->{3.649401715442725*^9, 3.649947818084209*^9, 
+  3.649948896547489*^9}]
 }, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"ContourPlot", "[", 
   RowBox[{
    RowBox[{
-    RowBox[{"h", "[", 
+    RowBox[{"V", "[", 
      RowBox[{"x", ",", "y", ",", "z"}], "]"}], "/.", 
     RowBox[{"{", 
      RowBox[{"y", "\[Rule]", "0"}], "}"}]}], ",", 
@@ -7343,13 +7319,18 @@ Cell[BoxData[
  CellChangeTimes->{{3.649398774566223*^9, 3.649398783073131*^9}, {
   3.649399051578348*^9, 3.64939905297942*^9}, {3.649399102410815*^9, 
   3.649399109438494*^9}, {3.649399713561184*^9, 3.649399739607561*^9}, {
-  3.649401358186252*^9, 3.649401359685906*^9}}],
+  3.649401358186252*^9, 3.649401359685906*^9}, {3.64994891217428*^9, 
+  3.649948912583394*^9}}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.649950347146885*^9}]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{"ContourPlot", "[", 
   RowBox[{
    RowBox[{
-    RowBox[{"h", "[", 
+    RowBox[{"V", "[", 
      RowBox[{"x", ",", "y", ",", "z"}], "]"}], "/.", 
     RowBox[{"{", 
      RowBox[{"y", "\[Rule]", "0"}], "}"}]}], ",", 
@@ -7361,7 +7342,8 @@ Cell[BoxData[
      RowBox[{"-", "50"}], ",", "50"}], "}"}], ",", 
    RowBox[{"PlotLegends", "\[Rule]", "Automatic"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.649399565028847*^9, 3.649399593513958*^9}, 
-   3.649399737223924*^9, {3.649401365027784*^9, 3.64940136549761*^9}}],
+   3.649399737223924*^9, {3.649401365027784*^9, 3.64940136549761*^9}, {
+   3.649948934508357*^9, 3.649948934918892*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -7501,16 +7483,17 @@ Cell[390740, 7237, 403, 14, 81, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[391180, 7256, 746, 19, 31, "Input"],
-Cell[391929, 7277, 710, 14, 85, "Message"],
-Cell[392642, 7293, 710, 14, 85, "Message"],
-Cell[393355, 7309, 501, 15, 47, "Output"]
+Cell[391929, 7277, 624, 21, 68, "Output"]
 }, Open  ]],
-Cell[393871, 7327, 723, 18, 31, "Input"],
-Cell[394597, 7347, 604, 16, 31, "Input"],
-Cell[395204, 7365, 940, 29, 51, "Input"],
-Cell[396147, 7396, 771, 19, 31, "Input"],
-Cell[396921, 7417, 582, 16, 31, "Input"],
-Cell[397506, 7435, 298, 9, 51, "Input"]
+Cell[CellGroupData[{
+Cell[392590, 7303, 771, 19, 31, "Input"],
+Cell[393364, 7324, 77, 1, 31, "Output"]
+}, Open  ]],
+Cell[393456, 7328, 654, 17, 31, "Input"],
+Cell[394113, 7347, 940, 29, 51, "Input"],
+Cell[395056, 7378, 771, 19, 31, "Input"],
+Cell[395830, 7399, 582, 16, 31, "Input"],
+Cell[396415, 7417, 298, 9, 51, "Input"]
 }
 ]
 *)
