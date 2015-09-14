@@ -1,0 +1,346 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10769,        337]
+NotebookOptionsPosition[      9794,        300]
+NotebookOutlinePosition[     10147,        316]
+CellTagsIndexPosition[     10104,        313]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Remove", "[", "\"\<Global`*\>\"", "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Ex: Couple ODE\[CloseCurlyQuote]s - Lorenz \
+Attractor", "Subsection"]], "Section",
+ CellChangeTimes->{{3.650585598566684*^9, 3.650585621868367*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"rho", " ", ":=", " ", "25"}], ";", 
+  RowBox[{"T", ":=", " ", "10.4898"}], ";", 
+  RowBox[{"solution", "=", 
+   RowBox[{"NDSolve", "[", 
+    RowBox[{
+     RowBox[{"{", " ", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"x", "'"}], "[", "t", "]"}], "\[Equal]", 
+        RowBox[{"10", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"y", "[", "t", "]"}], "-", 
+           RowBox[{"x", "[", "t", "]"}]}], ")"}]}]}], " ", ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"y", "'"}], "[", "t", "]"}], "==", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"x", "[", "t", "]"}], 
+          RowBox[{"(", 
+           RowBox[{"rho", "-", 
+            RowBox[{"z", "[", "t", "]"}]}], ")"}]}], " ", "-", 
+         RowBox[{"y", "[", "t", "]"}]}]}], " ", ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"z", "'"}], "[", "t", "]"}], "\[Equal]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"x", "[", "t", "]"}], " ", 
+          RowBox[{"y", "[", "t", "]"}]}], " ", "-", " ", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"8", "/", "3"}], ")"}], " ", 
+          RowBox[{"z", "[", "t", "]"}]}]}]}], ",", 
+       RowBox[{
+        RowBox[{"x", "[", "0", "]"}], "\[Equal]", "10"}], ",", 
+       RowBox[{
+        RowBox[{"y", "[", "0", "]"}], "\[Equal]", "10"}], ",", 
+       RowBox[{
+        RowBox[{"z", "[", "0", "]"}], "\[Equal]", "10"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "y", ",", "z"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "0.01", ",", "T"}], "}"}]}], "]"}]}], 
+  ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Evaluate", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"x", "[", "t", "]"}], ",", 
+      RowBox[{"y", "[", "t", "]"}], ",", 
+      RowBox[{"z", "[", "t", "]"}]}], "}"}], " ", "/.", " ", "solution"}], 
+   "]"}], ";"}]], "Input"],
+
+Cell[BoxData[{
+ RowBox[{"ParametricPlot", "[", " ", 
+  RowBox[{
+   RowBox[{"Evaluate", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"x", "[", "t", "]"}], ",", 
+       RowBox[{"y", "[", "t", "]"}]}], "}"}], " ", "/.", " ", "solution"}], 
+    "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "T"}], "}"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ParametricPlot", "[", " ", 
+  RowBox[{
+   RowBox[{"Evaluate", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"y", "[", "t", "]"}], ",", 
+       RowBox[{"z", "[", "t", "]"}]}], "}"}], " ", "/.", " ", "solution"}], 
+    "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "T"}], "}"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ParametricPlot", "[", " ", 
+  RowBox[{
+   RowBox[{"Evaluate", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"z", "[", "t", "]"}], ",", 
+       RowBox[{"x", "[", "t", "]"}]}], "}"}], " ", "/.", " ", "solution"}], 
+    "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "T"}], "}"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ParametricPlot3D", "[", " ", 
+  RowBox[{
+   RowBox[{"Evaluate", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"z", "[", "t", "]"}], ",", 
+       RowBox[{"x", "[", "t", "]"}], ",", 
+       RowBox[{"y", "[", "t", "]"}]}], "}"}], " ", "/.", " ", "solution"}], 
+    "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "T"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.650585537019073*^9, 3.650585571931328*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Numerical solutions for PDE\[CloseCurlyQuote]s", "Subsection",
+ CellChangeTimes->{{3.650585674022399*^9, 3.6505857070039988`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Analytic solution for a 1D wave equation", "Subsubsection",
+ CellChangeTimes->{{3.650585717732442*^9, 3.650585746452528*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"eqn1", "=", 
+  RowBox[{
+   RowBox[{"D", "[", 
+    RowBox[{
+     RowBox[{"f", "[", 
+      RowBox[{"t", ",", "x"}], "]"}], ",", "t", ",", "t"}], "]"}], "\[Equal]", 
+   RowBox[{"D", "[", 
+    RowBox[{
+     RowBox[{"f", "[", 
+      RowBox[{"t", ",", "x"}], "]"}], ",", "x", ",", "x"}], 
+    "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"DSolve", "[", 
+  RowBox[{"eqn1", ",", "f", ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "x"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.650585067166271*^9, 3.6505851241968803`*^9}, 
+   3.650585162695506*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Diffusion equation", "Subsubsection",
+ CellChangeTimes->{{3.650585760796471*^9, 3.650585764964224*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[Kappa]", ":=", "1"}]], "Input",
+ CellChangeTimes->{{3.650585049896883*^9, 3.6505850527011337`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"eqn2", "=", 
+  RowBox[{
+   RowBox[{"D", "[", 
+    RowBox[{
+     RowBox[{"f", "[", 
+      RowBox[{"t", ",", "x"}], "]"}], ",", "t"}], "]"}], "\[Equal]", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "/", "\[Kappa]"}], ")"}], 
+    RowBox[{"D", "[", 
+     RowBox[{
+      RowBox[{"f", "[", 
+       RowBox[{"t", ",", "x"}], "]"}], ",", "x", ",", "x"}], 
+     "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.650584002283266*^9, 3.650584035877318*^9}, {
+   3.6505841387713013`*^9, 3.650584140223629*^9}, {3.65058418231513*^9, 
+   3.650584185239429*^9}, {3.6505842220702047`*^9, 3.650584222165361*^9}, 
+   3.6505845296228533`*^9, 3.650584776690654*^9, {3.650584986336388*^9, 
+   3.650585010144927*^9}, {3.650585040878334*^9, 3.6505850461558113`*^9}, 
+   3.650585119158107*^9}],
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{"eqn2", ",", "f", ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "x"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.65058398537602*^9, 3.650584009398871*^9}, {
+   3.650584041870727*^9, 3.6505840504532547`*^9}, 3.6505845335417557`*^9, 
+   3.650584779993723*^9, 3.6505851852695208`*^9}],
+
+Cell[BoxData[
+ RowBox[{"sol", ":=", 
+  RowBox[{"NDSolve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"eqn2", ",", 
+      RowBox[{
+       RowBox[{"f", "[", 
+        RowBox[{"0", ",", "x"}], "]"}], "\[Equal]", 
+       RowBox[{
+        RowBox[{"Exp", "[", 
+         RowBox[{
+          RowBox[{"-", "10"}], 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"x", "-", "0.5"}], ")"}], "^", "2"}]}], "]"}], 
+        RowBox[{"Sin", "[", 
+         RowBox[{"Pi", " ", "x"}], "]"}]}]}], ",", 
+      RowBox[{
+       RowBox[{"f", "[", 
+        RowBox[{"t", ",", "0"}], "]"}], "\[Equal]", "0"}], ",", 
+      RowBox[{
+       RowBox[{"f", "[", 
+        RowBox[{"t", ",", "1"}], "]"}], "\[Equal]", "0"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"f", "[", 
+      RowBox[{"t", ",", "x"}], "]"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", "0", ",", "5"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", "1"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{
+  3.650584056125421*^9, {3.6505841045346117`*^9, 3.6505841239181147`*^9}, {
+   3.650584157016767*^9, 3.650584157102212*^9}, {3.6505841928971653`*^9, 
+   3.650584194344962*^9}, {3.650584231741786*^9, 3.6505843163899384`*^9}, {
+   3.650584360171917*^9, 3.650584388149564*^9}, {3.650584454168952*^9, 
+   3.650584474752039*^9}, {3.650584516639407*^9, 3.650584537471195*^9}, {
+   3.650584654085741*^9, 3.65058466741432*^9}, 3.650584785930456*^9, {
+   3.650584865064636*^9, 3.650584869438381*^9}, {3.650584913456517*^9, 
+   3.6505849135341167`*^9}, {3.650584948025921*^9, 3.6505849545186234`*^9}, 
+   3.650585189422558*^9}],
+
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{"Plot", "[", " ", 
+   RowBox[{
+    RowBox[{"Evaluate", "[", 
+     RowBox[{
+      RowBox[{"Abs", "[", 
+       RowBox[{
+        RowBox[{"f", "[", 
+         RowBox[{"t", ",", "x"}], "]"}], "/.", "sol"}], "]"}], "/.", 
+      RowBox[{"t", "\[Rule]", "0"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+    RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], " "}]], "Input",
+ CellChangeTimes->{{3.650584477678616*^9, 3.650584493213925*^9}, {
+  3.650584572014923*^9, 3.65058459601572*^9}, {3.650584632251265*^9, 
+  3.6505846472699203`*^9}}],
+
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{"Animate", "[", 
+   RowBox[{
+    RowBox[{"Plot", "[", " ", 
+     RowBox[{
+      RowBox[{"Evaluate", "[", 
+       RowBox[{
+        RowBox[{"Abs", "[", 
+         RowBox[{
+          RowBox[{"f", "[", 
+           RowBox[{"t", ",", "x"}], "]"}], "/.", "sol"}], "]"}], "/.", 
+        RowBox[{"t", "\[Rule]", "s"}]}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+      RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], " ", ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", "0", ",", "5"}], "}"}], ",", 
+    RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.650584815149433*^9, 3.650584831221201*^9}, {
+  3.650584885500018*^9, 3.650584897920053*^9}, {3.650585198726738*^9, 
+  3.650585199572753*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.650585230506909*^9, 3.650585242671463*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1191, 662},
+WindowMargins->{{3, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 27, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 74, 1, 28, "Input"],
+Cell[CellGroupData[{
+Cell[657, 25, 173, 2, 55, "Section"],
+Cell[833, 29, 1640, 48, 63, "Input"],
+Cell[2476, 79, 282, 9, 28, "Input"],
+Cell[2761, 90, 1553, 49, 80, "Input"],
+Cell[CellGroupData[{
+Cell[4339, 143, 136, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[4500, 148, 131, 1, 35, "Subsubsection"],
+Cell[4634, 151, 572, 17, 46, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5243, 173, 109, 1, 35, "Subsubsection"],
+Cell[5355, 176, 125, 2, 28, "Input"],
+Cell[5483, 180, 792, 20, 28, "Input"],
+Cell[6278, 202, 335, 7, 28, "Input"],
+Cell[6616, 211, 1611, 40, 28, "Input"],
+Cell[8230, 253, 612, 16, 28, "Input"],
+Cell[8845, 271, 814, 21, 28, "Input"],
+Cell[9662, 294, 92, 1, 28, "Input"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
