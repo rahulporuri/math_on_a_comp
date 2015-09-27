@@ -10,17 +10,32 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     34829,       1126]
-NotebookOptionsPosition[     32437,       1041]
-NotebookOutlinePosition[     32797,       1057]
-CellTagsIndexPosition[     32754,       1054]
+NotebookDataLength[     38953,       1239]
+NotebookOptionsPosition[     36070,       1139]
+NotebookOutlinePosition[     36430,       1155]
+CellTagsIndexPosition[     36387,       1152]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"Remove", "[", "\"\<Global`*\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.651815847867959*^9, 3.65181585310971*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Remove", "::", "rmnsm"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"There are no symbols matching \
+\\\"\[NoBreak]\\!\\(\\\"Global`*\\\"\\)\[NoBreak]\\\". \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Remove/rmnsm\\\", \
+ButtonNote -> \\\"Remove::rmnsm\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.65236464956449*^9}]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -62,7 +77,7 @@ Cell[BoxData[
     RowBox[{"0", ",", 
      FractionBox["\[ImaginaryI]", 
       SqrtBox["2"]], ",", "0"}], "}"}]}], "}"}]], "Output",
- CellChangeTimes->{3.65181591923132*^9}],
+ CellChangeTimes->{3.65181591923132*^9, 3.652364650047809*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -93,7 +108,7 @@ Cell[BoxData[
         Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
   Function[BoxForm`e$, 
    MatrixForm[BoxForm`e$]]]], "Output",
- CellChangeTimes->{3.651815919236652*^9}]
+ CellChangeTimes->{3.65181591923132*^9, 3.652364650057037*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -133,7 +148,7 @@ Cell[BoxData[
         Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
   Function[BoxForm`e$, 
    MatrixForm[BoxForm`e$]]]], "Output",
- CellChangeTimes->{3.651815941275545*^9}]
+ CellChangeTimes->{3.651815941275545*^9, 3.65236465008566*^9}]
 }, Open  ]],
 
 Cell["\<\
@@ -141,6 +156,11 @@ as we can see above, the conjugate transpose of the matrix is the same as the \
 matrix i.e the matrix J_y is herminitian!\
 \>", "Text",
  CellChangeTimes->{{3.651815950000245*^9, 3.651815969742916*^9}}],
+
+Cell["\<\
+the eigenvalues of the matric J_y are\
+\>", "Text",
+ CellChangeTimes->{{3.652364702137784*^9, 3.652364707543345*^9}}],
 
 Cell[CellGroupData[{
 
@@ -159,8 +179,14 @@ Cell[BoxData[
    RowBox[{"-", "1.`"}], ",", "1.`", ",", "0.`"}], "}"}]], "Output",
  CellChangeTimes->{
   3.651815980994967*^9, 3.651816284479027*^9, 3.651816331146022*^9, {
-   3.65181639293331*^9, 3.651816416347932*^9}, 3.65181799261161*^9}]
+   3.65181639293331*^9, 3.651816416347932*^9}, 3.65181799261161*^9, 
+   3.652364650405171*^9}]
 }, Open  ]],
+
+Cell["\<\
+the eigenvectors of the matrix J_y are\
+\>", "Text",
+ CellChangeTimes->{{3.652364713476134*^9, 3.652364723134686*^9}}],
 
 Cell[CellGroupData[{
 
@@ -191,7 +217,7 @@ Cell[BoxData[
     RowBox[{"1", ",", "0", ",", "1"}], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{
   3.651815991903555*^9, {3.651816187371814*^9, 3.651816194867234*^9}, 
-   3.651816422438495*^9, 3.651817543986547*^9}]
+   3.651816422438495*^9, 3.651817543986547*^9, 3.652364650730397*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -213,7 +239,8 @@ Cell[BoxData[
    FractionBox["\[ImaginaryI]", 
     SqrtBox["2"]], ",", 
    FractionBox["1", "2"]}], "}"}]], "Output",
- CellChangeTimes->{3.651818463640017*^9, 3.651818502452567*^9}],
+ CellChangeTimes->{3.651818463640017*^9, 3.651818502452567*^9, 
+  3.652364651059265*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -224,7 +251,8 @@ Cell[BoxData[
     FractionBox["\[ImaginaryI]", 
      SqrtBox["2"]]}], ",", 
    FractionBox["1", "2"]}], "}"}]], "Output",
- CellChangeTimes->{3.651818463640017*^9, 3.651818502458221*^9}],
+ CellChangeTimes->{3.651818463640017*^9, 3.651818502452567*^9, 
+  3.652364651065197*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -233,8 +261,14 @@ Cell[BoxData[
     SqrtBox["2"]], ",", "0", ",", 
    FractionBox["1", 
     SqrtBox["2"]]}], "}"}]], "Output",
- CellChangeTimes->{3.651818463640017*^9, 3.651818502464237*^9}]
+ CellChangeTimes->{3.651818463640017*^9, 3.651818502452567*^9, 
+  3.652364651071111*^9}]
 }, Open  ]],
+
+Cell["\<\
+normalized eigenvectors of the matrix J_y\
+\>", "Text",
+ CellChangeTimes->{{3.652364733867318*^9, 3.652364744477298*^9}}],
 
 Cell[CellGroupData[{
 
@@ -271,7 +305,7 @@ Cell[BoxData[
   Function[BoxForm`e$, 
    MatrixForm[BoxForm`e$]]]], "Output",
  CellChangeTimes->{3.651816228723322*^9, 3.651816431151879*^9, 
-  3.651817561765579*^9, 3.651818504033914*^9}],
+  3.651817561765579*^9, 3.651818504033914*^9, 3.652364651213165*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -301,7 +335,7 @@ Cell[BoxData[
   Function[BoxForm`e$, 
    MatrixForm[BoxForm`e$]]]], "Output",
  CellChangeTimes->{3.651816228723322*^9, 3.651816431151879*^9, 
-  3.651817561765579*^9, 3.651818504041131*^9}],
+  3.651817561765579*^9, 3.651818504033914*^9, 3.652364651221212*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -329,8 +363,19 @@ Cell[BoxData[
   Function[BoxForm`e$, 
    MatrixForm[BoxForm`e$]]]], "Output",
  CellChangeTimes->{3.651816228723322*^9, 3.651816431151879*^9, 
-  3.651817561765579*^9, 3.651818504046735*^9}]
+  3.651817561765579*^9, 3.651818504033914*^9, 3.652364651227142*^9}]
 }, Open  ]],
+
+Cell["\<\
+We now construct the matrices Uadjoint and U from the normalized eigenvectors \
+of J_y, where the rows of the matrix Uadjoint are the conjugates of \
+normalized eigenvectors mentioned above the matrix U is the conjugate \
+transpose of the Uadjoint i.e it\[CloseCurlyQuote]s columns are the \
+normalized eigenvectors of J_y\
+\>", "Text",
+ CellChangeTimes->{{3.652364763639941*^9, 3.652364803400465*^9}, {
+  3.652364841514654*^9, 3.652364863741641*^9}, {3.652364897145069*^9, 
+  3.652364901587425*^9}, {3.652364938193381*^9, 3.652364977773044*^9}}],
 
 Cell[CellGroupData[{
 
@@ -375,7 +420,7 @@ Cell[BoxData[
  CellChangeTimes->{
   3.651816462240176*^9, {3.651816603659476*^9, 3.651816609396814*^9}, 
    3.651817563611623*^9, 3.651818319368835*^9, 3.651818358470182*^9, 
-   3.651818519081601*^9}],
+   3.651818519081601*^9, 3.65236465135324*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -414,7 +459,7 @@ Cell[BoxData[
  CellChangeTimes->{
   3.651816462240176*^9, {3.651816603659476*^9, 3.651816609396814*^9}, 
    3.651817563611623*^9, 3.651818319368835*^9, 3.651818358470182*^9, 
-   3.651818519090072*^9}]
+   3.651818519081601*^9, 3.652364651361025*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -451,7 +496,7 @@ Cell[BoxData[
       SqrtBox["2"]]}], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{{3.651816628416466*^9, 3.651816635508908*^9}, 
    3.651817565925166*^9, 3.651818321912808*^9, 3.651818361001126*^9, 
-   3.651818521428268*^9}],
+   3.651818521428268*^9, 3.652364651493654*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -489,8 +534,13 @@ Cell[BoxData[
    MatrixForm[BoxForm`e$]]]], "Output",
  CellChangeTimes->{{3.651816628416466*^9, 3.651816635508908*^9}, 
    3.651817565925166*^9, 3.651818321912808*^9, 3.651818361001126*^9, 
-   3.651818521437336*^9}]
+   3.651818521428268*^9, 3.652364651502548*^9}]
 }, Open  ]],
+
+Cell["\<\
+as we can see, the matrix product Uadj U is the identity matrix\
+\>", "Text",
+ CellChangeTimes->{{3.652364987298984*^9, 3.652365002442478*^9}}],
 
 Cell[CellGroupData[{
 
@@ -515,7 +565,7 @@ Cell[BoxData[
     RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{3.651816679478443*^9, 3.651816851868038*^9, 
   3.651816891239826*^9, 3.651817568463279*^9, 3.651818324336929*^9, 
-  3.651818363344417*^9, 3.651818524480307*^9}],
+  3.651818363344417*^9, 3.651818524480307*^9, 3.652364651624148*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -528,7 +578,7 @@ Cell[BoxData[
     RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{3.651816679478443*^9, 3.651816851868038*^9, 
   3.651816891239826*^9, 3.651817568463279*^9, 3.651818324336929*^9, 
-  3.651818363344417*^9, 3.651818524486801*^9}],
+  3.651818363344417*^9, 3.651818524480307*^9, 3.652364651630828*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -551,8 +601,15 @@ Cell[BoxData[
    MatrixForm[BoxForm`e$]]]], "Output",
  CellChangeTimes->{3.651816679478443*^9, 3.651816851868038*^9, 
   3.651816891239826*^9, 3.651817568463279*^9, 3.651818324336929*^9, 
-  3.651818363344417*^9, 3.651818524493263*^9}]
+  3.651818363344417*^9, 3.651818524480307*^9, 3.65236465163682*^9}]
 }, Open  ]],
+
+Cell["\<\
+as we can see, the matrx product of the matrices Uadjoint J_y and U is a \
+diagonal matrix where the diagonal elements are -1, 1 and 0 which are also \
+the eigenvalues of J_y!\
+\>", "Text",
+ CellChangeTimes->{{3.652365010124859*^9, 3.652365064081159*^9}}],
 
 Cell[CellGroupData[{
 
@@ -582,7 +639,7 @@ Cell[BoxData[
   Function[BoxForm`e$, 
    MatrixForm[BoxForm`e$]]]], "Output",
  CellChangeTimes->{3.651816996997936*^9, 3.651818333690866*^9, 
-  3.651818527214734*^9}]
+  3.651818527214734*^9, 3.65236465174629*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -658,8 +715,13 @@ Cell[BoxData[
     Function[BoxForm`e$, 
      MatrixForm[BoxForm`e$]]]}], "}"}]], "Output",
  CellChangeTimes->{{3.651818601205458*^9, 3.651818612833759*^9}, 
-   3.651818729544393*^9}]
+   3.651818729544393*^9, 3.652364652047265*^9}]
 }, Open  ]],
+
+Cell["\<\
+here, we show the product of all two sets of pauli matrices\
+\>", "Text",
+ CellChangeTimes->{{3.652365107975451*^9, 3.652365143563087*^9}}],
 
 Cell[CellGroupData[{
 
@@ -856,8 +918,16 @@ Cell[BoxData[
        MatrixForm[BoxForm`e$]]]}], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{{3.651818763932799*^9, 3.651818778711289*^9}, {
    3.651818810228185*^9, 3.651818828670215*^9}, {3.651818875735165*^9, 
-   3.651818878844871*^9}, 3.651818912304378*^9}]
+   3.651818878844871*^9}, 3.651818912304378*^9, 3.652364652198022*^9}]
 }, Open  ]],
+
+Cell["\<\
+having computed the product of two pauli matrices, we sum the diagonal \
+elements (referred to as j, which runs from 1 to 2) for each set of two pauli \
+matrices to calculate the trace\
+\>", "Text",
+ CellChangeTimes->{{3.652365176230723*^9, 3.652365306319534*^9}, {
+  3.65236538674859*^9, 3.652365394289119*^9}}],
 
 Cell[CellGroupData[{
 
@@ -893,7 +963,34 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{"0", ",", "0", ",", "2"}], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{
-  3.651819260215177*^9, {3.651819302734871*^9, 3.651819346328705*^9}}]
+  3.651819260215177*^9, {3.651819302734871*^9, 3.651819346328705*^9}, 
+   3.652364652319065*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"2", "*", 
+    RowBox[{"KroneckerDelta", "[", 
+     RowBox[{"k", ",", "m"}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"k", ",", "1", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"m", ",", "1", ",", "3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.652365317943869*^9, 3.65236535967779*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "2", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "2"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.652365341136287*^9, 3.652365361008752*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -973,7 +1070,7 @@ Cell[BoxData[
         RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{{3.65181963872337*^9, 3.651819646940188*^9}, 
    3.651819713414513*^9, 3.651819833316295*^9, {3.651819989645925*^9, 
-   3.65181999676852*^9}, 3.651820035617596*^9}]
+   3.65181999676852*^9}, 3.651820035617596*^9, 3.652364652445559*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1036,7 +1133,8 @@ Cell[BoxData[
          RowBox[{"-", "1"}], ",", "0"}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "}"}]}], "}"}]], "Output",
- CellChangeTimes->{3.651819981825913*^9, 3.651820025393393*^9}]
+ CellChangeTimes->{3.651819981825913*^9, 3.651820025393393*^9, 
+  3.652364652571988*^9}]
 }, Open  ]]
 },
 WindowSize->{660, 716},
@@ -1056,77 +1154,92 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 139, 2, 31, "Input"],
 Cell[CellGroupData[{
-Cell[721, 26, 551, 17, 88, "Input"],
-Cell[1275, 45, 555, 19, 54, "Output"],
-Cell[1833, 66, 923, 29, 116, "Output"]
+Cell[579, 22, 139, 2, 31, "Input"],
+Cell[721, 26, 465, 10, 24, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2793, 100, 174, 4, 31, "Input"],
-Cell[2970, 106, 923, 29, 116, "Output"]
-}, Open  ]],
-Cell[3908, 138, 211, 4, 51, "Text"],
-Cell[CellGroupData[{
-Cell[4144, 146, 369, 7, 31, "Input"],
-Cell[4516, 155, 267, 6, 31, "Output"]
+Cell[1223, 41, 551, 17, 88, "Input"],
+Cell[1777, 60, 577, 19, 54, "Output"],
+Cell[2357, 81, 944, 29, 116, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4820, 166, 355, 7, 31, "Input"],
-Cell[5178, 175, 571, 18, 38, "Output"]
+Cell[3338, 115, 174, 4, 31, "Input"],
+Cell[3515, 121, 944, 29, 116, "Output"]
+}, Open  ]],
+Cell[4474, 153, 211, 4, 51, "Text"],
+Cell[4688, 159, 127, 3, 31, "Text"],
+Cell[CellGroupData[{
+Cell[4840, 166, 369, 7, 31, "Input"],
+Cell[5212, 175, 293, 7, 31, "Output"]
+}, Open  ]],
+Cell[5520, 185, 128, 3, 31, "Text"],
+Cell[CellGroupData[{
+Cell[5673, 192, 355, 7, 31, "Input"],
+Cell[6031, 201, 593, 18, 38, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5786, 198, 354, 7, 72, "Input"],
-Cell[6143, 207, 259, 8, 54, "Output"],
-Cell[6405, 217, 280, 9, 54, "Output"],
-Cell[6688, 228, 219, 7, 52, "Output"]
+Cell[6661, 224, 354, 7, 72, "Input"],
+Cell[7018, 233, 284, 9, 54, "Output"],
+Cell[7305, 244, 305, 10, 54, "Output"],
+Cell[7613, 256, 244, 8, 52, "Output"]
+}, Open  ]],
+Cell[7872, 267, 131, 3, 31, "Text"],
+Cell[CellGroupData[{
+Cell[8028, 274, 247, 4, 72, "Input"],
+Cell[8278, 280, 905, 27, 112, "Output"],
+Cell[9186, 309, 930, 28, 112, "Output"],
+Cell[10119, 339, 861, 26, 102, "Output"]
+}, Open  ]],
+Cell[10995, 368, 556, 9, 91, "Text"],
+Cell[CellGroupData[{
+Cell[11576, 381, 606, 12, 52, "Input"],
+Cell[12185, 395, 815, 27, 54, "Output"],
+Cell[13003, 424, 1188, 37, 116, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6944, 240, 247, 4, 72, "Input"],
-Cell[7194, 246, 883, 27, 112, "Output"],
-Cell[8080, 275, 908, 28, 112, "Output"],
-Cell[8991, 305, 839, 26, 102, "Output"]
+Cell[14228, 466, 235, 4, 52, "Input"],
+Cell[14466, 472, 791, 26, 54, "Output"],
+Cell[15260, 500, 1163, 36, 116, "Output"]
+}, Open  ]],
+Cell[16438, 539, 153, 3, 31, "Text"],
+Cell[CellGroupData[{
+Cell[16616, 546, 369, 8, 72, "Input"],
+Cell[16988, 556, 462, 11, 31, "Output"],
+Cell[17453, 569, 462, 11, 31, "Output"],
+Cell[17918, 582, 818, 21, 74, "Output"]
+}, Open  ]],
+Cell[18751, 606, 265, 5, 71, "Text"],
+Cell[CellGroupData[{
+Cell[19041, 615, 162, 3, 31, "Input"],
+Cell[19206, 620, 749, 21, 74, "Output"]
+}, Open  ]],
+Cell[19970, 644, 140, 2, 31, "Input"],
+Cell[CellGroupData[{
+Cell[20135, 650, 319, 8, 31, "Input"],
+Cell[20457, 660, 2042, 57, 46, "Output"]
+}, Open  ]],
+Cell[22514, 720, 149, 3, 31, "Text"],
+Cell[CellGroupData[{
+Cell[22688, 727, 445, 12, 52, "Input"],
+Cell[23136, 741, 6446, 179, 83, "Output"]
+}, Open  ]],
+Cell[29597, 923, 322, 6, 71, "Text"],
+Cell[CellGroupData[{
+Cell[29944, 933, 683, 20, 72, "Input"],
+Cell[30630, 955, 377, 11, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9867, 336, 606, 12, 52, "Input"],
-Cell[10476, 350, 794, 27, 54, "Output"],
-Cell[11273, 379, 1166, 37, 116, "Output"]
+Cell[31044, 971, 367, 10, 31, "Input"],
+Cell[31414, 983, 326, 9, 88, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12476, 421, 235, 4, 52, "Input"],
-Cell[12714, 427, 769, 26, 54, "Output"],
-Cell[13486, 455, 1141, 36, 116, "Output"]
+Cell[31777, 997, 1371, 38, 92, "Input"],
+Cell[33151, 1037, 1095, 35, 52, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14664, 496, 369, 8, 72, "Input"],
-Cell[15036, 506, 440, 11, 31, "Output"],
-Cell[15479, 519, 440, 11, 31, "Output"],
-Cell[15922, 532, 797, 21, 74, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[16756, 558, 162, 3, 31, "Input"],
-Cell[16921, 563, 728, 21, 74, "Output"]
-}, Open  ]],
-Cell[17664, 587, 140, 2, 31, "Input"],
-Cell[CellGroupData[{
-Cell[17829, 593, 319, 8, 31, "Input"],
-Cell[18151, 603, 2020, 57, 46, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[20208, 665, 445, 12, 52, "Input"],
-Cell[20656, 679, 6424, 179, 83, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[27117, 863, 683, 20, 72, "Input"],
-Cell[27803, 885, 351, 10, 31, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[28191, 900, 1371, 38, 92, "Input"],
-Cell[29565, 940, 1073, 35, 109, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[30675, 980, 790, 23, 72, "Input"],
-Cell[31468, 1005, 953, 33, 52, "Output"]
+Cell[34283, 1077, 790, 23, 72, "Input"],
+Cell[35076, 1102, 978, 34, 52, "Output"]
 }, Open  ]]
 }
 ]
