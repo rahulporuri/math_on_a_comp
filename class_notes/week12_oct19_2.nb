@@ -1,0 +1,296 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      9230,        287]
+NotebookOptionsPosition[      8477,        255]
+NotebookOutlinePosition[      8815,        270]
+CellTagsIndexPosition[      8772,        267]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Remove", "[", "\"\<Global`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.654781906701206*^9, 3.654781913021611*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Estimating the Value of Pi", "Section",
+ CellChangeTimes->{{3.654782001375748*^9, 3.654782005116723*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"m", "=", "0"}], ";", 
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"i", "=", "0"}], ",", 
+      RowBox[{"i", "<", "Ns"}], ",", 
+      RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"x", "=", 
+        RowBox[{"RandomReal", "[", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}], "]"}]}], ";", 
+       RowBox[{"y", "=", 
+        RowBox[{"RandomReal", "[", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}], "]"}]}], ";", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"x", "^", "2"}], "+", 
+            RowBox[{"y", "^", "2"}]}], ")"}], "<=", "1"}], ",", 
+         RowBox[{"m", "+=", "1"}]}], "]"}]}]}], "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Abs", "[", 
+     RowBox[{"N", "[", 
+      RowBox[{"4", "*", 
+       RowBox[{"m", "/", "Ns"}]}], "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"Ns", ",", "100", ",", "1000", ",", "100"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.654781968549163*^9, 3.654781981659108*^9}, {
+  3.654782400946579*^9, 3.65478243232376*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "3.08`", ",", "3.24`", ",", "3.1066666666666665`", ",", "3.04`", ",", 
+   "3.232`", ",", "3.08`", ",", "3.085714285714286`", ",", "3.18`", ",", 
+   "2.977777777777778`", ",", "3.072`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.65478198355516*^9, 3.654782011350804*^9}, 
+   3.654782552346742*^9, 3.654782606906619*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"m", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"i", "=", "0"}], ",", 
+      RowBox[{"i", "<", "Ns"}], ",", 
+      RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"x", "=", 
+        RowBox[{"RandomReal", "[", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}], "]"}]}], ";", 
+       RowBox[{"y", "=", 
+        RowBox[{"RandomReal", "[", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}], "]"}]}], ";", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"x", "^", "2"}], "+", 
+            RowBox[{"y", "^", "2"}]}], ")"}], "<=", "1"}], ",", 
+         RowBox[{"m", "+=", "1"}]}], "]"}]}]}], "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Abs", "[", 
+     RowBox[{"N", "[", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"4", "*", 
+          RowBox[{"m", "/", "Ns"}]}], "-", "Pi"}], ")"}], "/", "Pi"}], "]"}], 
+     "]"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"Ns", ",", "100", ",", "1000", ",", "100"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.65478191456458*^9, 3.654781915190668*^9}, {
+  3.654782466937912*^9, 3.654782477112278*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.019605550553924673`", ",", "0.06416893461965541`", ",", 
+   "0.05780273689597959`", ",", "0.013239352830248852`", ",", 
+   "0.006873155106573032`", ",", "0.013239352830248852`", ",", 
+   "0.001416414200565268`", ",", "0.007450789771697526`", ",", 
+   "0.017176925182868875`", ",", "0.010692873740778524`"}], "}"}]], "Output",
+ CellChangeTimes->{3.654781917531163*^9, 3.65478201278178*^9, 
+  3.654782607131855*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Mean", "[", "\[IndentingNewLine]", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"m", "=", "0"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"For", "[", 
+        RowBox[{
+         RowBox[{"i", "=", "0"}], ",", 
+         RowBox[{"i", "<", "Ns"}], ",", 
+         RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"x", "=", 
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "1"}], "}"}], "]"}]}], ";", 
+          RowBox[{"y", "=", 
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "1"}], "}"}], "]"}]}], ";", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"x", "^", "2"}], "+", 
+               RowBox[{"y", "^", "2"}]}], ")"}], "<=", "1"}], ",", 
+            RowBox[{"m", "+=", "1"}]}], "]"}]}]}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Abs", "[", 
+        RowBox[{"N", "[", 
+         RowBox[{"4", "*", 
+          RowBox[{"m", "/", "Ns"}]}], "]"}], "]"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"Ni", ",", "40"}], "}"}]}], "]"}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"Ns", ",", "10", ",", "100", ",", "10"}], "}"}]}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.654782325417943*^9, 3.654782331324975*^9}, {
+  3.654782493190404*^9, 3.654782516178369*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "3.13`", ",", "3.185`", ",", "3.0566666666666666`", ",", "3.145`", ",", 
+   "3.198`", ",", "3.086666666666667`", ",", "3.1142857142857143`", ",", 
+   "3.185`", ",", "3.158888888888889`", ",", "3.1870000000000003`"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.654782333293155*^9, 3.654782607958536*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Mean", "[", "\[IndentingNewLine]", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"m", "=", "0"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"For", "[", 
+        RowBox[{
+         RowBox[{"i", "=", "0"}], ",", 
+         RowBox[{"i", "<", "Ns"}], ",", 
+         RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"x", "=", 
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "1"}], "}"}], "]"}]}], ";", 
+          RowBox[{"y", "=", 
+           RowBox[{"RandomReal", "[", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "1"}], "}"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"x", "^", "2"}], "+", 
+               RowBox[{"y", "^", "2"}]}], ")"}], "<=", "1"}], ",", 
+            RowBox[{"m", "+=", "1"}]}], "]"}]}]}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Abs", "[", 
+        RowBox[{"N", "[", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"4", "*", 
+             RowBox[{"m", "/", "Ns"}]}], "-", "Pi"}], ")"}], "/", "Pi"}], 
+         "]"}], "]"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"Ni", ",", "40"}], "}"}]}], "]"}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"Ns", ",", "10", ",", "100", ",", "10"}], "}"}]}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.654782334872397*^9, 3.654782358578063*^9}, {
+  3.654782521905989*^9, 3.654782541428462*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.12560566569687306`", ",", "0.08329579870357373`", ",", 
+   "0.07174646373707724`", ",", "0.07852115041081684`", ",", 
+   "0.05283944110650927`", ",", "0.059154943091895354`", ",", 
+   "0.044724383839639`", ",", "0.049869726790164326`", ",", 
+   "0.047048551262568246`", ",", "0.04588731934875558`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.654782360326461*^9, 3.654782368987531*^9}, 
+   3.654782609270035*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{659, 716},
+WindowMargins->{{Automatic, -9}, {Automatic, -10}},
+FrontEndVersion->"9.0 for Linux x86 (32-bit) (November 20, 2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 140, 2, 31, "Input"],
+Cell[CellGroupData[{
+Cell[722, 26, 111, 1, 80, "Section"],
+Cell[CellGroupData[{
+Cell[858, 31, 1261, 36, 132, "Input"],
+Cell[2122, 69, 359, 7, 52, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2518, 81, 1359, 40, 132, "Input"],
+Cell[3880, 123, 458, 9, 52, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4375, 137, 1544, 42, 172, "Input"],
+Cell[5922, 181, 343, 7, 52, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6302, 193, 1689, 47, 172, "Input"],
+Cell[7994, 242, 455, 9, 85, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
