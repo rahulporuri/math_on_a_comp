@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[    202645,       3531]
+NotebookDataLength[    202656,       3531]
 NotebookOptionsPosition[    199171,       3414]
-NotebookOutlinePosition[    200253,       3449]
-CellTagsIndexPosition[    200173,       3444]
+NotebookOutlinePosition[    200262,       3449]
+CellTagsIndexPosition[    200182,       3444]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -3413,8 +3413,8 @@ delenit augue duis dolore te feugait nulla facilisi.\
 }, Open  ]]
 },
 ScreenStyleEnvironment->"Working",
-WindowSize->{1319, 744},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{659, 716},
+WindowMargins->{{-10, Automatic}, {Automatic, -10}},
 TaggingRules->{"SlideShow" -> True},
 FrontEndVersion->"9.0 for Linux x86 (32-bit) (November 20, 2012)",
 StyleDefinitions->"Default.nb"
@@ -3425,17 +3425,17 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "SlideShowHeader"->{
-  Cell[557, 20, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[557, 20, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[646, 25, 4322, 96, 0, "SlideShowNavigationBar",
+  Cell[646, 25, 4322, 96, 75, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[5356, 137, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[5356, 137, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[14037, 330, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[14037, 330, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[25556, 562, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[25556, 562, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[38139, 815, 64, 1, 1, "SlideShowNavigationBar",
+  Cell[38139, 815, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
   Cell[39703, 868, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]}
@@ -3443,73 +3443,73 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 199536, 3426}
+ {"SlideShowHeader", 199539, 3426}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 64, 1, 1, "SlideShowNavigationBar",
+Cell[557, 20, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[646, 25, 4322, 96, 0, "SlideShowNavigationBar",
+Cell[646, 25, 4322, 96, 75, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[4971, 123, 134, 2, 192, "Title"],
-Cell[5108, 127, 139, 2, 99, "Subtitle"],
-Cell[5250, 131, 69, 1, 47, "Input"]
+Cell[4971, 123, 134, 2, 148, "Title"],
+Cell[5108, 127, 139, 2, 51, "Subtitle"],
+Cell[5250, 131, 69, 1, 31, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5356, 137, 64, 1, 1, "SlideShowNavigationBar",
+Cell[5356, 137, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
-Cell[5423, 140, 140, 2, 47, "Input"],
+Cell[5423, 140, 140, 2, 31, "Input"],
 Cell[CellGroupData[{
-Cell[5588, 146, 416, 13, 150, "Input"],
-Cell[6007, 161, 254, 9, 87, "Output"]
+Cell[5588, 146, 416, 13, 100, "Input"],
+Cell[6007, 161, 254, 9, 74, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6298, 175, 770, 24, 78, "Input"],
-Cell[7071, 201, 6917, 123, 246, "Output"]
+Cell[6298, 175, 770, 24, 52, "Input"],
+Cell[7071, 201, 6917, 123, 238, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14037, 330, 64, 1, 1, "SlideShowNavigationBar",
+Cell[14037, 330, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[14126, 335, 226, 6, 47, "Input"],
-Cell[14355, 343, 330, 12, 117, "Output"]
+Cell[14126, 335, 226, 6, 31, "Input"],
+Cell[14355, 343, 330, 12, 82, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14722, 360, 549, 17, 47, "Input"],
-Cell[15274, 379, 10233, 177, 247, "Output"]
+Cell[14722, 360, 549, 17, 31, "Input"],
+Cell[15274, 379, 10233, 177, 239, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25556, 562, 64, 1, 1, "SlideShowNavigationBar",
+Cell[25556, 562, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[25645, 567, 165, 5, 47, "Input"],
-Cell[25813, 574, 736, 27, 117, "Output"]
+Cell[25645, 567, 165, 5, 31, "Input"],
+Cell[25813, 574, 736, 27, 82, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26586, 606, 402, 12, 47, "Input"],
-Cell[26991, 620, 11099, 189, 265, "Output"]
+Cell[26586, 606, 402, 12, 31, "Input"],
+Cell[26991, 620, 11099, 189, 257, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[38139, 815, 64, 1, 1, "SlideShowNavigationBar",
+Cell[38139, 815, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[38228, 820, 46, 0, 116, "Section"],
-Cell[38277, 822, 307, 5, 105, "Text"],
+Cell[38228, 820, 46, 0, 80, "Section"],
+Cell[38277, 822, 307, 5, 91, "Text"],
 Cell[CellGroupData[{
-Cell[38609, 831, 304, 5, 97, "Item"],
+Cell[38609, 831, 304, 5, 83, "Item"],
 Cell[CellGroupData[{
-Cell[38938, 840, 159, 3, 71, "Subitem"],
-Cell[39100, 845, 124, 3, 47, "Subitem"]
+Cell[38938, 840, 159, 3, 43, "Subitem"],
+Cell[39100, 845, 124, 3, 43, "Subitem"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[39273, 854, 50, 0, 85, "Subsection"],
-Cell[39326, 856, 316, 5, 51, "Text"]
+Cell[39273, 854, 50, 0, 44, "Subsection"],
+Cell[39326, 856, 316, 5, 91, "Text"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -3518,11 +3518,11 @@ Cell[39703, 868, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
 Cell[39792, 873, 50, 0, 44, "Subsection"],
-Cell[39845, 875, 307, 5, 51, "Text"],
+Cell[39845, 875, 307, 5, 91, "Text"],
 Cell[CellGroupData[{
 Cell[40177, 884, 52, 0, 35, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[40254, 888, 406, 12, 31, "Input"],
+Cell[40254, 888, 406, 12, 52, "Input"],
 Cell[40663, 902, 98228, 1506, 230, 68560, 1018, "CachedBoxData", "BoxData", \
 "Output"]
 }, Open  ]]
